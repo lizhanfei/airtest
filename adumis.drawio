@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-02-08T06:18:54.207Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36" etag="-1IbjD38-NX23viVHEoY" version="14.2.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-02-08T06:23:46.827Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36" etag="_R6hVt3tWzWLwEuRmuAm" version="14.2.9" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2253" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -104,6 +104,54 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="590" y="680" as="sourcePoint" />
             <mxPoint x="750" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LYjiTgfoy2OztdyQjs71-38" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;text-align: left&quot;&gt;&lt;b&gt;app.domain.&amp;nbsp;truthexam.repository.TruthExam&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ GetTruthExamListByExamTypeIdsWithPage(ctx *gin.Context, ExamTypeIds []uint32, provinceId, page, perPage int) ([]TruthExamPo, error)&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="490" y="870" width="770" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="LYjiTgfoy2OztdyQjs71-39" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;span style=&quot;text-align: left&quot;&gt;&lt;b&gt;app.domain.&amp;nbsp;truthexam.repository.TruthExamQuestions&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+&amp;nbsp;GetTruthExamQuestionsByTruthExamId(ctx *gin.Context, truthExamId uint32, status int) ([]TruthExamQuestionsPo, error)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1340" y="870" width="690" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="LYjiTgfoy2OztdyQjs71-40" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LYjiTgfoy2OztdyQjs71-33" target="LYjiTgfoy2OztdyQjs71-39">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="980" y="750" as="sourcePoint" />
+            <mxPoint x="1140" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LYjiTgfoy2OztdyQjs71-41" value="Use" style="endArrow=open;endSize=12;dashed=1;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LYjiTgfoy2OztdyQjs71-33" target="LYjiTgfoy2OztdyQjs71-38">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="980" y="750" as="sourcePoint" />
+            <mxPoint x="1140" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LYjiTgfoy2OztdyQjs71-43" value="app.domain. truthexam.repository.TruthExamImplDb" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="490" y="1052" width="780" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LYjiTgfoy2OztdyQjs71-45" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="LYjiTgfoy2OztdyQjs71-43">
+          <mxGeometry y="26" width="780" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="LYjiTgfoy2OztdyQjs71-46" value="+ GetTruthExamListByExamTypeIdsWithPage(ctx *gin.Context, ExamTypeIds []uint32, provinceId, page, perPage int) ([]TruthExamPo, error)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LYjiTgfoy2OztdyQjs71-43">
+          <mxGeometry y="34" width="780" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LYjiTgfoy2OztdyQjs71-47" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LYjiTgfoy2OztdyQjs71-43" target="LYjiTgfoy2OztdyQjs71-38">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="880" y="900" as="sourcePoint" />
+            <mxPoint x="1040" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LYjiTgfoy2OztdyQjs71-48" value="app.domain. truthexam.repository.TruthExamQuestionsImplDb" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1340" y="1052" width="690" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LYjiTgfoy2OztdyQjs71-50" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="LYjiTgfoy2OztdyQjs71-48">
+          <mxGeometry y="26" width="690" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="LYjiTgfoy2OztdyQjs71-51" value="+ GetTruthExamQuestionsByTruthExamId(ctx *gin.Context, truthExamId uint32, status int) ([]TruthExamQuestionsPo, error)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="LYjiTgfoy2OztdyQjs71-48">
+          <mxGeometry y="34" width="690" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="LYjiTgfoy2OztdyQjs71-52" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="LYjiTgfoy2OztdyQjs71-48" target="LYjiTgfoy2OztdyQjs71-39">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1540" y="900" as="sourcePoint" />
+            <mxPoint x="1700" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
